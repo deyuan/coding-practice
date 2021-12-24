@@ -1,0 +1,11 @@
+# Executables
+*.out
+*.pyc
+
+# Paths
+__pycache__
+*.egg-info
+
+# DBs
+*.sqlite3
+
