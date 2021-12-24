@@ -19,14 +19,14 @@ struct empty_stack : public std::exception {
   }
 };
 
-// Notes: Do not have separate top() and pop() to avoid race condition
-// top() and pop() from diffenrent threads may interleave
+// Notes: Do not have separate top() and pop() to avoid race condition,
+// since top() and pop() from diffenrent threads may interleave
 template<typename T>
 class ThreadsafeStack {
  public:
   ThreadsafeStack() {}
   ThreadsafeStack(const ThreadsafeStack& other) {
-    std::lock_guard<std::mutex> lock(m_);
+    std::lock_guard<std::mutex> lock(other.m_);  // need to lock the other mutex
     data_ = other.data_;
   }
   ThreadsafeStack& operator=(const ThreadsafeStack&) = delete;
