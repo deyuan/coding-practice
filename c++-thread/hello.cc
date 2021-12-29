@@ -11,7 +11,8 @@ void task() {
 }
 
 int main() {
-  int numThreads = 5;
+  int numThreads = std::thread::hardware_concurrency();
+  std::cout << "Number of threads: " << numThreads << std::endl;
 
   // create threads
   std::vector<std::thread> threads;
