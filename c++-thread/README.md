@@ -2,7 +2,7 @@
 
 ## Compiler
 * Makefile
-  * Compiler flags: `-std=c++11`, `-std=c++14`, `-std=c++17`
+  * Compiler flags: `-std=c++11`, `-std=c++14`, `-std=c++17`, `-std=c++2a`
 
 ## Thread Basics
 * `hello.cc` - Multi-threading hello world

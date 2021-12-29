@@ -4,7 +4,7 @@
 
 CC = g++
 LIBS =
-CFLAGS = -Wall -std=c++17 -O3
+CFLAGS = -Wall -std=c++2a -O3
 
 SRCS = $(wildcard *.cc)
 OBJS = $(SRCS:.cc=.out)
