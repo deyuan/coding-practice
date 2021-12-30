@@ -77,14 +77,20 @@
 
 ## Classic Problems
 * `aba-problem.cc` - Demonstrate the ABA problem
-  * ABA Problem: https://en.wikipedia.org/wiki/ABA_problem
+  * https://en.wikipedia.org/wiki/ABA_problem
   * Thread interleaving, context switching
   * C++ atomic data type
     * `#include <atomic>`
     * ++ and += are atomic
     * `val = val + 1` is not atomic
+* `readers-writers.cc` - Readers-writers problem
+  * https://en.wikipedia.org/wiki/Readers–writers_problem
+  * 1st problem: readers-preference, writers may starve
+  * 2nd problem: writers-preference, readers may starve
+  * 3rd problem: fairness, no starvation
+    * Key idea: Simulate a service queue
 * `dining-philosophers.cc` - Solve the dining philosopher problem
-  * Dining Philosophers Problem: https://en.wikipedia.org/wiki/Dining_philosophers_problem
+  * https://en.wikipedia.org/wiki/Dining_philosophers_problem
   * Solutions
     * Arbitrator solution
       * Allow to pick two forks or none
