@@ -60,8 +60,9 @@
   * `cv.notify_one();`
   * `cv.notify_all();`
   * `cv.wait(lock, [](){ return cond; });`
-    * Unique lock is required
+    * Unique lock (locked) is required
     * Same as while (cond) wait
+    * Release the lock if condition does not met, and reacquire at the end of wait
 * `async-future.cc` - Test async and future
   * One-off event (happen only once)
     * `std::async`
@@ -77,7 +78,7 @@
 ## Classic Problems
 * `aba-problem.cc` - Demonstrate the ABA problem
   * ABA Problem: https://en.wikipedia.org/wiki/ABA_problem
-  * Thread interleaving
+  * Thread interleaving, context switching
   * C++ atomic data type
     * `#include <atomic>`
     * ++ and += are atomic
@@ -103,6 +104,9 @@
   * `std::atomic_flag flag;`
     * Lock: `while (flag.test_and_set(std::memory_order_acquire));`
     * Unlock: `flag.clear(std::memory_order_release);`
+* `barrier.cc` - Implement a reusable thread barrier
+  * Implement thread barrier using a counter, a mutex, and a condition variable
+  * Using modulo and counter range check to differentiate back-to-back barrier wait calls
 * `mt-accumulate.cc` - Implement a MT accumulate algorithm
   * Thread ID
     * `std::this_thread::get_id()`
