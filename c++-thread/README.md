@@ -83,6 +83,10 @@
     * `#include <atomic>`
     * ++ and += are atomic
     * `val = val + 1` is not atomic
+* `cigarette-smokers.cc` - Cigarette Smokers problem
+  * https://en.wikipedia.org/wiki/Cigarette_smokers_problem
+  * Agent, tobacco, paper, match
+  * Avoid dead lock when waiting for multiple things
 * `readers-writers.cc` - Readers-writers problem
   * https://en.wikipedia.org/wiki/Readers–writers_problem
   * 1st problem: readers-preference, writers may starve
@@ -100,6 +104,8 @@
       * Allow at most n-1
     * Chandy/Misra solution
       * This prevents starvation
+* https://en.wikipedia.org/wiki/Producer–consumer_problem
+* https://en.wikipedia.org/wiki/Sleeping_barber_problem
 
 ## MT Data Structures and Algorithms
 * `thread-guard.cc` - Implement a thread guard
