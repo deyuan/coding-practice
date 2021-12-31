@@ -33,6 +33,7 @@
     * Callable object
       * Use `thread((task()))` or `thread{task()}`
       * Do not use `thread(task())` which is a function declaration
+      * https://en.wikipedia.org/wiki/Most_vexing_parse
     * Lambda function
 * `dead-lock.cc` - Test dead lock
   * Lock-free programming
