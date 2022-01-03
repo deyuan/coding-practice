@@ -4,7 +4,9 @@
 * binary-search
 * bitwise
 * disjoint-set
+* graph
 * math
+* quine
 * red-black-tree
 
 ## Multi-threading
@@ -13,3 +15,4 @@
 
 ## Programming Languages
 * c++-stl
+* cuda
