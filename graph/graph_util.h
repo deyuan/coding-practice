@@ -89,5 +89,21 @@ static inline void DirectedEdgeListToAdjAndCostList(
             << " weighted directed edges to adj/cost list" << std::endl;
 }
 
+static inline void UndirectedEdgeListToAdjAndCostList(
+    const std::vector<std::vector<int>> &edges,
+    std::vector<std::vector<int>> &adj,
+    std::vector<std::vector<int>> &cost) {
+
+  for (auto& edge : edges) {
+    adj[edge[0]].push_back(edge[1]);
+    adj[edge[1]].push_back(edge[0]);
+    cost[edge[0]].push_back(edge[2]);
+    cost[edge[1]].push_back(edge[2]);
+  }
+
+  std::cout << "Converted " << edges.size()
+            << " weighted undirected edges to adj/cost list" << std::endl;
+}
+
 #endif  // GRAPH_GRAPH_UTIL_H_
 

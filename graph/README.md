@@ -33,4 +33,10 @@
   * Single-source shortest path on directed graph, any weights
 * `has-neg-cycle.cc` - Detect negative weighted cycle based on Bellman-Ford algorithm
   * Run one more iteration and see if any shortest distance is updated
+* `mst-kruskal.cc` - Minimum Spanning Tree, Kruskal algorithm
+  * Greedily pick edges
+  * Sort edges by weight + union find
+* `mst-prim.cc` - Minimum Spanning Tree, Prim algorithm
+  * Greedily pick vertices
+  * Min heap to get next vertex with minimum weight
 
