@@ -3,10 +3,11 @@
 ## Algorithms
 * binary-search
 * bitwise
-* disjoint-set
 * graph
 * math
-* quine
+
+## Data Structures
+* disjoint-set
 * red-black-tree
 
 ## Multi-threading
@@ -16,3 +17,4 @@
 ## Programming Languages
 * c++-stl
 * cuda
+* quine
