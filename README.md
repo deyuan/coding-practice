@@ -1,20 +1,17 @@
 # coding-practice
 
 ## Algorithms
-* binary-search
-* bitwise
-* graph
-* math
-
-## Data Structures
-* disjoint-set
-* red-black-tree
+* [binary-search](binary-search/README.md)
+* [bitwise](bitwise/README.md)
+* [data-structures](data-structures/README.md)
+* [graph](graph/README.md)
+* [math](math/README.md)
 
 ## Multi-threading
-* c++-thread
-* semaphore
+* [c++-thread](c++-thread/README.md)
+* [semaphore](semaphore/README.md)
 
 ## Programming Languages
-* c++-stl
-* cuda
-* quine
+* [c++-stl](c++-stl/README.md)
+* [cuda](cuda/README.md)
+* [quine](quine/README.md)
