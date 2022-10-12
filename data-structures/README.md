@@ -29,3 +29,8 @@
   * https://en.wikipedia.org/wiki/2–3–4_tree
   * https://en.wikipedia.org/wiki/Left-leaning_red–black_tree
 
+## Binary Heap
+* File: binary-heap.cc
+* A C++ implementation of max binary heap
+* https://en.wikipedia.org/wiki/Binary_heap
+* Key functions: up-heap, down-heap, O(n) build
